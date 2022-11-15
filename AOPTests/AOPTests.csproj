@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <OutputType>Library</OutputType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.3.0" />
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp.Workspaces" Version="4.3.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.3.2" />
+    <PackageReference Include="Ninject.Extensions.Interception" Version="3.3.5" />
+    <PackageReference Include="Ninject.Extensions.Interception.DynamicProxy" Version="3.3.5" />
+    <PackageReference Include="NUnit" Version="3.13.3" />
+    <PackageReference Include="NUnit3TestAdapter" Version="4.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AOPML\AOPML.csproj" />
+    <ProjectReference Include="..\AOP\AOP.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="postsharp.config">
+      <SubType>Component</SubType>
+    </None>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+	<MetalamaEmitCompilerTransformedFiles>True</MetalamaEmitCompilerTransformedFiles>
+	<MetalamaFormatOutput>True</MetalamaFormatOutput>
+	<MetalamaDebugTransformedCode>True</MetalamaDebugTransformedCode>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Metalama.Framework" Version="0.5.57-preview" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AOP\AOP.csproj" />
+  </ItemGroup>
+
+</Project>
