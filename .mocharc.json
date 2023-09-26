@@ -1,0 +1,5 @@
+{
+  "require": "./register.js",
+  "reporter": "dot",
+	"spec": "./test/**/*.ts"
+}
