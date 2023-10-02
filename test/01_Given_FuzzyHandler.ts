@@ -47,7 +47,7 @@ describe("Given fuzzy proxy", () => {
 	})
 	it("When calling powr, pow is called.", () => {
 		// @ts-ignore
-		const result = Math.powr(3,2);
+		const result = Math.powre(3,2);
 
 		expect(result).to.be.equal(9);
 	});

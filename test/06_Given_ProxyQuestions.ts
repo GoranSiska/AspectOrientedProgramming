@@ -5,7 +5,7 @@ describe("Given Proxy questions", () => {
 	it("When getting a property, missing property returns default value", () => {
 		const originalPerson = new Person("John", "Wick", 32);
 		const handler = {
-			defaultValue: "n/a",
+			defaultValue: "Larry",
 			get(target: any, property: any, receiver: unknown): any {
 				if(!Reflect.has(target, property)) {
 					return this.defaultValue;
@@ -18,7 +18,7 @@ describe("Given Proxy questions", () => {
 		//@ts-ignore
 		const result = person.middleName;
 
-		expect(result).to.eq("n/a");
+		expect(result).to.eq("Larry");
 	});
 	it("When settinig a readonly property, property is unchanged", () => {
 		const originalPerson = new Person("John", "Wick", 32);

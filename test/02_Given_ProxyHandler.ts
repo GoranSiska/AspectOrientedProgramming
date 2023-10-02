@@ -13,9 +13,9 @@ class FullHandler implements ProxyHandler<any> {
 		//# Important
 		this.log += message + ";";
 		const val = Reflect.get(target, property, receiver);
-		// if(typeof (val) === 'function') {
-		// 	return new Proxy(val, this);
-		// }
+		if(typeof (val) === 'function') {
+			return new Proxy(val, this);
+		}
 		return val;
 	}
 	set(target: any, property: any, value: any, receiver: any): boolean {
